@@ -122,7 +122,7 @@
     console.log(str);
     ```
 
-8.  Square number pattern
+8.  Number pattern
 
     ```js
     let str = "";
@@ -141,7 +141,7 @@
     let str = "";
     for (let i = 1; i <= 5; i++) {
       for (let j = 1; j <= 5; j++) {
-        str += i;
+        str += j;
       }
       str += "\n";
     }
