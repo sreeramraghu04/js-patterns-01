@@ -164,3 +164,92 @@
     }
     console.log(str);
     ```
+
+11. Parallelogram pattern
+
+    ```js
+    let str = "";
+    for (let i = 1; i <= 5; i++) {
+      for (let k = 1; k <= 5 - i; k++) {
+        str += " ";
+      }
+      for (let j = 1; j <= 5; j++) {
+        str += "*";
+      }
+      str += "\n";
+    }
+    console.log(str);
+    ```
+
+12. Mirror parallelogram pattern
+
+    ```js
+    let str = "";
+    for (let i = 1; i <= 5; i++) {
+      for (let k = 1; k >= 3 - i; k--) {
+        str += " ";
+      }
+      for (let j = 1; j <= 5; j++) {
+        str += "*";
+      }
+      str += "\n";
+    }
+    console.log(str);
+    ```
+
+    - another way
+
+    ```js
+    let str = "";
+    for (let i = 1; i <= 5; i++) {
+      for (let j = 1; j <= 9; j++) {
+        if (i == j || i == j - 1 || i == j - 2 || i == j - 3 || i == j - 4) {
+          str += "*";
+        } else {
+          str += " ";
+        }
+      }
+      str += "\n";
+    }
+    console.log(str);
+    ```
+
+13. Hollow parallelogram pattern
+
+    ```js
+    let str = "";
+    for (let i = 1; i <= 5; i++) {
+      for (let k = 1; k <= 5 - i; k++) {
+        str += " ";
+      }
+      for (let j = 1; j <= 5; j++) {
+        if (i === 1 || i === 5 || j === 1 || j === 5) {
+          str += "*";
+        } else {
+          str += " ";
+        }
+      }
+      str += "\n";
+    }
+    console.log(str);
+    ```
+
+14. Hollow mirror parallelogram pattern
+
+    ```js
+    let str = "";
+    for (let i = 1; i <= 5; i++) {
+      for (let k = 1; k >= 3 - i; k--) {
+        str += " ";
+      }
+      for (let j = 1; j <= 5; j++) {
+        if (i === 1 || i === 5 || j === 1 || j === 5) {
+          str += "*";
+        } else {
+          str += " ";
+        }
+      }
+      str += "\n";
+    }
+    console.log(str);
+    ```
